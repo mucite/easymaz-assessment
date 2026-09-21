@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: easymaz-assessment
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/easymaz
+      auto-index-creation: true   # create @Indexed / @CompoundIndex indexes at startup
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.ReactiveMongoTemplate: DEBUG   # shows every Mongo query
